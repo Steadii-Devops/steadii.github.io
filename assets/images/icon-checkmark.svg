@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>circle-check</title>
+    <g id="onboarding" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="matched-advocates-schedule-confirmed" transform="translate(-140, -96)" fill="#A0CC39" fill-rule="nonzero">
+            <g id="circle-check" transform="translate(140, 96)">
+                <path d="M44.11875,62.11875 C42.95625,63.3 41.04375,63.3 39.88125,62.11875 L27.88125,50.11875 C26.7,48.95625 26.7,47.04375 27.88125,45.88125 C29.04375,44.7 30.95625,44.7 32.11875,45.88125 L42,55.7625 L63.88125,33.88125 C65.04375,32.7 66.95625,32.7 68.11875,33.88125 C69.3,35.04375 69.3,36.95625 68.11875,38.11875 L44.11875,62.11875 Z M96,48 C96,74.5125 74.5125,96 48,96 C21.4875,96 0,74.5125 0,48 C0,21.4875 21.4875,0 48,0 C74.5125,0 96,21.4875 96,48 Z M48,6 C24.80625,6 6,24.80625 6,48 C6,71.19375 24.80625,90 48,90 C71.19375,90 90,71.19375 90,48 C90,24.80625 71.19375,6 48,6 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
