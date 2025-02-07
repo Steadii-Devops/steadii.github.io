@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bg-circle-testimonials</title>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.119999997">
+        <g id="Group-26-Copy-2" transform="translate(-223, -10)" fill="#FFFFFF">
+            <path d="M254,10 C271.120827,10 285,23.8791728 285,41 C285,58.1208272 271.120827,72 254,72 C236.879173,72 223,58.1208272 223,41 C223,23.8791728 236.879173,10 254,10 Z M254,25.5 C245.439586,25.5 238.5,32.4395864 238.5,41 C238.5,49.5604136 245.439586,56.5 254,56.5 C262.560414,56.5 269.5,49.5604136 269.5,41 C269.5,32.4395864 262.560414,25.5 254,25.5 Z" id="bg-circle-testimonials"></path>
+        </g>
+    </g>
+</svg>
