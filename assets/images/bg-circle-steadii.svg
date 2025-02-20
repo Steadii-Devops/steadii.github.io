@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bg-circle-steadii</title>
+    <g id="caregivers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.0799999982">
+        <g transform="translate(-1232, -765)" fill="#3C3291" id="Group-10">
+            <g transform="translate(88, 8)">
+                <path d="M1304,757 C1392.36556,757 1464,828.63444 1464,917 C1464,1005.36556 1392.36556,1077 1304,1077 C1215.63444,1077 1144,1005.36556 1144,917 C1144,828.63444 1215.63444,757 1304,757 Z M1304,837 C1259.81722,837 1224,872.81722 1224,917 C1224,961.18278 1259.81722,997 1304,997 C1348.18278,997 1384,961.18278 1384,917 C1384,872.81722 1348.18278,837 1304,837 Z" id="bg-circle-steadii"></path>
+            </g>
+        </g>
+    </g>
+</svg>

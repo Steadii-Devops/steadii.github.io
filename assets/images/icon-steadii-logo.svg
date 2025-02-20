@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="49px" viewBox="0 0 34 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-steadii-logo</title>
+    <defs>
+        <filter x="-27.4%" y="-12.2%" width="154.7%" height="134.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.118198208 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="caregivers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-27, -26)" fill-rule="nonzero" id="icon-steadii-logo">
+            <g filter="url(#filter-1)" transform="translate(31.4174, 28)">
+                <g id="Group" transform="translate(14.0708, 0)" fill="#E119A0">
+                    <path d="M4.59599389,23.5288523 L4.59599389,39.9080533 C4.59599389,40.5125238 5.06370019,41 5.643656,41 L10.4641489,41 C11.0441047,41 11.511811,40.5385225 11.511811,39.934052 L11.4556863,23.5288523 C11.4556863,16.5611921 8.29399169,12.4208941 2.50690576,11.705929 C1.88953345,11.6279328 1.35946631,12.1479074 1.35946631,12.791376 L1.35946631,17.7701332 C1.35946631,18.225111 1.62761792,18.65409 2.04543554,18.7905834 C3.76035864,19.3690552 4.59599389,20.9289791 4.59599389,23.5288523 Z" id="Path"></path>
+                    <path d="M8.91760009,4.6472733 C8.91760009,7.21464807 6.92205322,9.29454661 4.45880004,9.29454661 C1.99554687,9.29454661 0,7.21464807 0,4.6472733 C0,2.07989854 1.99554687,0 4.45880004,0 C6.92205322,0 8.91760009,2.07989854 8.91760009,4.6472733 Z" id="Path"></path>
+                </g>
+                <path d="M9.11776965,4.60855211 C9.11776965,7.15453545 7.07742959,9.21710423 4.55888483,9.21710423 C2.04034006,9.21710423 0,7.15453545 0,4.60855211 C0,2.06256878 2.04034006,0 4.55888483,0 C7.07742959,0 9.11776965,2.06256878 9.11776965,4.60855211 Z" id="Path" fill="#FFFFFF"></path>
+                <path d="M8.05296718,28.9275271 L8.05296718,12.684798 C8.05296718,12.0853639 7.57476248,11.6019494 6.98178865,11.6019494 L2.05309219,11.6019494 C1.46011836,11.6019494 0.981913655,12.0595818 0.981913655,12.6590159 L1.03929822,28.9275271 C1.03929822,35.8371325 4.271962,39.9429335 10.1889482,40.6519415 C10.8201784,40.7292878 11.3621437,40.2136457 11.3621437,39.5755384 L11.3621437,34.6382644 C11.3621437,34.1870775 11.087973,33.7616727 10.6607768,33.6263166 C8.91373565,33.0591102 8.05296718,31.5121836 8.05296718,28.9275271 Z" id="Path" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
