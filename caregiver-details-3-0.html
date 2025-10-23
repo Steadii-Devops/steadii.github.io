@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caregiver Details - Enhanced</title>
+
+    <!--
+    ============================================================================
+    CRITICAL: Enhanced Legacy Notification Guard v4
+    ============================================================================
+    This script MUST be loaded FIRST, before any other scripts, to prevent
+    the null reference error when clicking "Join session" for Zoom meetings.
+
+    Error being prevented:
+    TypeError: null is not an object (evaluating
+    'document.querySelector('#home-header2 .container > div').lastChild')
+
+    This guard:
+    - Creates a stub DOM structure for Softr's legacy notification badge code
+    - Wraps legacy functions with error handling
+    - Monitors for DOM changes and maintains the stub structure
+    - Provides special handling for Zoom "Join session" clicks
+    - Suppresses errors that would cause infinite spinner lockup
+    ============================================================================
+    -->
+    <script src="legacy-notif-guard-enhanced.js"></script>
+
+    <!--
+    Alternative: Inline the guard script directly for maximum reliability
+    Uncomment below and remove the external script tag above if needed
+    -->
+    <!--
+    <script>
+    // Paste contents of legacy-notif-guard-enhanced.js here
+    </script>
+    -->
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .notice {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .notice strong {
+            color: #856404;
+        }
+
+        .integration-note {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .integration-note h3 {
+            margin-top: 0;
+            color: #0c5460;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Caregiver Details - Enhanced Version</h1>
+            <p>This file includes the Enhanced Legacy Notification Guard v4</p>
+        </div>
+
+        <div class="notice">
+            <strong>Status:</strong> The enhanced guard is active and protecting against null reference errors.
+            <br>
+            <strong>Version:</strong> <span id="guardVersion">Checking...</span>
+            <br>
+            <strong>Stub Status:</strong> <span id="stubStatus">Checking...</span>
+        </div>
+
+        <div class="integration-note">
+            <h3>Integration Instructions</h3>
+            <p>To integrate this fix into your existing caregiver-details-3-0.html file:</p>
+            <ol>
+                <li>
+                    <strong>Option 1 (Recommended):</strong> Add the external script reference at the very top of your <code>&lt;head&gt;</code> section:
+                    <pre>&lt;script src="https://steadii-devops.github.io/steadii.github.io/legacy-notif-guard-enhanced.js"&gt;&lt;/script&gt;</pre>
+                </li>
+                <li>
+                    <strong>Option 2:</strong> Inline the script by copying the entire contents of <code>legacy-notif-guard-enhanced.js</code>
+                    into a <code>&lt;script&gt;</code> tag at the very top of your <code>&lt;head&gt;</code> section (before any other scripts).
+                </li>
+                <li>
+                    Ensure this guard loads <strong>before</strong>:
+                    <ul>
+                        <li>Softr platform scripts</li>
+                        <li>CometChat SDK</li>
+                        <li>Zoom SDK</li>
+                        <li>Any other third-party scripts</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h4>Verification</h4>
+            <p>After integration, open your browser console and type:</p>
+            <pre>window.LegacyNotifGuard.getStatus()</pre>
+            <p>You should see output confirming the guard is active and the stub structure exists.</p>
+
+            <h4>What This Fixes</h4>
+            <ul>
+                <li>Prevents <code>TypeError: null is not an object</code> when clicking "Join session"</li>
+                <li>Stops infinite spinner on "Starting your session"</li>
+                <li>Ensures Zoom meetings can start correctly</li>
+                <li>Handles timing issues with Softr's legacy notification badge code</li>
+            </ul>
+        </div>
+
+        <!--
+        =======================================================================
+        BELOW THIS LINE: Add your original caregiver-details-3-0.html content
+        =======================================================================
+
+        This includes:
+        - All your existing HTML structure
+        - Caregiver details tabs (Chat, Practices, Resources, Notes, etc.)
+        - CometChat integration
+        - Zoom meeting integration
+        - Modal systems
+        - API integrations
+        - All other existing functionality
+
+        The enhanced guard above will protect all of this content from the
+        null reference error.
+        =======================================================================
+        -->
+
+        <div style="margin-top: 40px; padding: 20px; background: white; border-radius: 8px;">
+            <h2>Test Section</h2>
+            <p>This template demonstrates the enhanced guard. Replace this section with your actual caregiver details page content.</p>
+
+            <button onclick="testGuard()" style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                Test Guard Status
+            </button>
+
+            <button onclick="simulateJoinSession()" style="padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px;">
+                Simulate "Join session" Click
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Display guard status on page load
+        window.addEventListener('load', function() {
+            if (window.LegacyNotifGuard) {
+                const status = window.LegacyNotifGuard.getStatus();
+                document.getElementById('guardVersion').textContent = window.LegacyNotifGuard.version;
+                document.getElementById('stubStatus').textContent = status.stubEnsured ?
+                    '✓ Active (Stub created)' : '⚠ Initializing...';
+
+                console.log('[Test Page] Guard status:', status);
+            } else {
+                document.getElementById('guardVersion').textContent = '⚠ Not loaded';
+                document.getElementById('stubStatus').textContent = '⚠ Guard not found';
+            }
+        });
+
+        function testGuard() {
+            if (!window.LegacyNotifGuard) {
+                alert('Guard not loaded!');
+                return;
+            }
+
+            const status = window.LegacyNotifGuard.getStatus();
+            alert(`Guard Status:\n\nVersion: ${window.LegacyNotifGuard.version}\nStub Ensured: ${status.stubEnsured}\nHeader Exists: ${status.headerExists}\nObserver Active: ${status.observerActive}`);
+            console.log('Full status:', status);
+        }
+
+        function simulateJoinSession() {
+            console.log('[Test] Simulating Join session click...');
+
+            // This simulates what happens when the Join session button is clicked
+            // The guard should ensure the stub exists before any code tries to access it
+
+            try {
+                const element = document.querySelector('#home-header2 .container > div');
+                if (element && element.lastChild) {
+                    alert('✓ Success! The stub structure exists and can be accessed safely.\n\nThe Join session click would work correctly.');
+                    console.log('[Test] Stub verified:', element);
+                } else {
+                    alert('⚠ Warning: Could not access the required structure, but the guard should have created it.');
+                }
+            } catch (err) {
+                alert('⚠ Error occurred, but guard should have suppressed it:\n\n' + err.message);
+                console.error('[Test] Error:', err);
+            }
+        }
+    </script>
+</body>
+</html>
